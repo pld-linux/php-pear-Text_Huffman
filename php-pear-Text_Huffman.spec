@@ -26,7 +26,7 @@ for compressing textual data.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Kompresja Huffmana to bezstartny algorytm kompresji idealny do
+Kompresja Huffmana to bezstratny algorytm kompresji idealny do
 kompresji danych tekstowych.
 
 Ta klasa ma w PEAR status: %{_status}.
