@@ -1,11 +1,11 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Text
-%define         _subclass       Huffman
+%define		_class		Text
+%define		_subclass	Huffman
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - lossless compression algorithm
-Summary(pl):	%{_pearname} - bezstartny algorytm kompresji
+Summary(pl):	%{_pearname} - bezstratny algorytm kompresji
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
 Release:	1
