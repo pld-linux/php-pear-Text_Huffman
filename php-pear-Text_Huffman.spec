@@ -15,6 +15,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	6a9030e04735db05f7cacf6b14d0254b
 URL:		http://pear.php.net/package/Text_Huffman/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:5.0.0RC1
 Requires:	php-pear >= 3:5.0.0
