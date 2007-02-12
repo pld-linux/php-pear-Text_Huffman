@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - lossless compression algorithm
-Summary(pl.UTF-8):   %{_pearname} - bezstratny algorytm kompresji
+Summary(pl.UTF-8):	%{_pearname} - bezstratny algorytm kompresji
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
 Release:	3
@@ -37,7 +37,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
