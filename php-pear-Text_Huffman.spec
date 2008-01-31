@@ -8,7 +8,7 @@ Summary:	%{_pearname} - lossless compression algorithm
 Summary(pl.UTF-8):	%{_pearname} - bezstratny algorytm kompresji
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	3
+Release:	4
 Epoch:		0
 License:	LGPL
 Group:		Development/Languages/PHP
