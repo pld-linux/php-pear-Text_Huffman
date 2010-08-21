@@ -3,13 +3,11 @@
 %define		_subclass	Huffman
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - lossless compression algorithm
 Summary(pl.UTF-8):	%{_pearname} - bezstratny algorytm kompresji
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	4
-Epoch:		0
+Release:	5
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -18,7 +16,7 @@ URL:		http://pear.php.net/package/Text_Huffman/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:5.0.0RC1
+Requires:	php-common >= 3:5.0.0-0.RC1
 Requires:	php-pear >= 3:5.0.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -39,9 +37,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
