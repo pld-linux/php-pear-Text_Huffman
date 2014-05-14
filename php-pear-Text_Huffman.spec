@@ -1,13 +1,11 @@
-%include	/usr/lib/rpm/macros.php
-%define		_class		Text
-%define		_subclass	Huffman
 %define		_status		beta
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	Text_Huffman
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - lossless compression algorithm
 Summary(pl.UTF-8):	%{_pearname} - bezstratny algorytm kompresji
 Name:		php-pear-%{_pearname}
 Version:	0.2.0
-Release:	6
+Release:	7
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,7 +14,7 @@ URL:		http://pear.php.net/package/Text_Huffman/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:5.0.0-0.RC1
+Requires:	php(core) >= 5.0.0-0.RC1
 Requires:	php-pear >= 3:5.0.0
 Obsoletes:	php-pear-Text_Huffman-tests
 BuildArch:	noarch
@@ -49,4 +47,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/Text/*.php
