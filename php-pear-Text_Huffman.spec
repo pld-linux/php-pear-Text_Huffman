@@ -1,6 +1,5 @@
 %define		_status		beta
 %define		_pearname	Text_Huffman
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - lossless compression algorithm
 Summary(pl.UTF-8):	%{_pearname} - bezstratny algorytm kompresji
 Name:		php-pear-%{_pearname}
